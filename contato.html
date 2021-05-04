@@ -1,0 +1,121 @@
+<html>
+<body>
+<title>Web Outdoor</title>
+<meta charset="utf-8">
+
+
+
+
+  <head>
+
+    <link  href="arteweb.css" rel="stylesheet">
+    <meta name="viewport" content="width-device-width, initial-scale=1
+    user-scalable=no">
+
+    <script src="https://code.jquery.com/jquery-3.3.0.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+          })
+      })
+
+    </script>
+
+    <style>
+               body{
+                     background-color: black;
+                     background-size: cover;
+               }
+
+               .content {display:flex; justify-content:center}
+               .contato{width: 100%; max-width: 500px;}
+               .form{display: flex; flex-direction: column}
+               .field{padding: 10px; margin-bottom:15px; border: 1px solid #DDD; border-radius: 5px; font-family: Arial, Helvetica, snas-serif; font-size: 16px;}
+                textarea{height: 150px;}
+               .contato h1 {
+                             text-align: center;
+                             margin-top: 50px;
+               }
+
+
+
+              .field:last-child:hover  {
+                                   color: blue;
+               }
+
+
+
+
+    </style>
+
+
+
+  </head>
+
+
+
+
+<section>
+
+
+    <header>
+      <a href="#" class="logo"><img src="logc.png"></a>
+
+
+
+
+
+
+
+      <a class="toggle">Menu</a>
+
+
+
+
+<ul>
+
+  <li><a href="index.html">Top Gatas Da Hora</a></li>
+  <li><a href="dahora.html">Fotos</a></li>
+   <li><a href="hall.html">Vídeos</a></li>
+   <li><a href="contato.html">Contato para parcerias / patrocínio</a></li>
+
+
+
+
+</ul>
+      <section class="content">
+        <div class="contato">
+      <h1> Formulário de contato</h1>
+      <form class="form" method="POST" action= "./email.php">
+        <input class="field" name="name" placeholder="Nome">
+        <input class="field" name="email" placeholder="E-mail">
+        <textarea class="field" name="mesage" placeholder="Digite sua mensagem aqui"></textarea>
+        <input class="field" type="submit" value="Enviar">
+    </form>
+
+
+  </section>
+  </div>
+
+  <footer class="rodape">
+  <!--    <div="social-icons">
+   <a href="#"> <i class="fa fa-facebook"></i></a>
+    <a href="#"> <i  class="fa fa-twitter"></i></a>
+  </div>-->
+     <p> Copyright &copy;   Madrugabitch. Todos os direitos reservados.</p> <footer>
+</section>
+
+
+
+
+
+
+
+
+</header>
+
+
+
+</body>
+</html>
